@@ -62,3 +62,9 @@ CSS.args = args;
 
 export const HTML = HTMLTemplate.bind({});
 HTML.args = args;
+
+export const HappoDisabled: Story = () => (
+  <HtmlWithCssWrapper>
+    <Button {...args} disabled>Button</Button>
+  </HtmlWithCssWrapper>
+);
